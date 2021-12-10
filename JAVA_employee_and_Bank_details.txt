@@ -1,0 +1,58 @@
+//PROGRAM ON EMPLOYEE AND BANK DETAILS
+package com.app;
+
+public class ProgramOnEncapsulation1 {
+static String employee_name="Syamala kumari";
+static int employee_number=1007;
+//static double employee_salary=12000.00;
+static String employee_address="17-85, dsnr, hyderabad";
+static String employee_email_id="kjrsyamala@gmail.com";
+static String employee_bank_name= "AndhraBank";
+static double employee_balance= 30450.00;
+
+static void employee_deposit(double employee_salary)
+{
+        System.out.println("employee salary or amount deposited to employee account is = "+employee_salary);
+employee_balance= employee_salary+employee_balance;
+}
+
+static void employee_withdrawl(double withdrawl_amount)
+{
+System.out.println("withdrwal amount is "+withdrawl_amount);
+employee_balance= employee_balance- withdrawl_amount;
+
+}
+
+static void balanceenquiry()
+{
+System.out.println("remaining employee balance= "+employee_balance);
+}
+
+static void display()
+{
+System.out.println(employee_name+"\n"+"employee number is "+employee_number+"\n"+"employee address is "+employee_address+"\n"+"employee email_id is "+employee_email_id+"\n"+"employee bank name is "+employee_bank_name+"\n");
+}
+
+public static void main(String[] args) {
+
+display();
+employee_deposit(12000.00);
+employee_withdrawl(3400.00);
+balanceenquiry();
+
+
+
+}
+
+}
+
+output:
+Syamala kumari
+employee number is 1007
+employee address is 17-85, dsnr, hyderabad
+employee email_id is kjrsyamala@gmail.com
+employee bank name is AndhraBank
+
+employee salary or amount deposited to employee account is = 12000.0
+withdrwal amount is 3400.0
+remaining employee balance= 39050.0
